@@ -1,0 +1,22 @@
+PODS:
+  - NWNComponent (0.1.0)
+  - WXDoQuestion (0.1.0):
+    - NWNComponent
+
+DEPENDENCIES:
+  - NWNComponent (from `Lib/NWNComponent`)
+  - WXDoQuestion (from `Lib/WXDoQuestion`)
+
+EXTERNAL SOURCES:
+  NWNComponent:
+    :path: Lib/NWNComponent
+  WXDoQuestion:
+    :path: Lib/WXDoQuestion
+
+SPEC CHECKSUMS:
+  NWNComponent: 61ef69be650c057f547d1f6d23f456b140ac72e2
+  WXDoQuestion: b9d2bd3c0deb1f96dbc8e41f7e76007988d2fe9d
+
+PODFILE CHECKSUM: 01046258deb23c8f1d329e420b6d1b5a12295af6
+
+COCOAPODS: 1.4.0

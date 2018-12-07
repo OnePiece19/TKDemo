@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B157FC8BB57976B1CCA5A516 /* libPods-TKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7521361399ABBE789591FC /* libPods-TKDemo.a */; };
 		E5C8A57E21BA46C40021A828 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C8A57D21BA46C40021A828 /* AppDelegate.m */; };
 		E5C8A58121BA46C40021A828 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C8A58021BA46C40021A828 /* ViewController.m */; };
 		E5C8A58421BA46C40021A828 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C8A58221BA46C40021A828 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E7521361399ABBE789591FC /* libPods-TKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F95DC08BC38778FE18141AE /* Pods-TKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TKDemo/Pods-TKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4EE52E2DA29E8DADA66DF702 /* Pods-TKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TKDemo/Pods-TKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E5C8A57921BA46C40021A828 /* TKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C8A57C21BA46C40021A828 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5C8A57D21BA46C40021A828 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B157FC8BB57976B1CCA5A516 /* libPods-TKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68314BDB39EFD2768BB89332 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E7521361399ABBE789591FC /* libPods-TKDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8960FBE158DACF5A2737AC74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F95DC08BC38778FE18141AE /* Pods-TKDemo.debug.xcconfig */,
+				4EE52E2DA29E8DADA66DF702 /* Pods-TKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5C8A57021BA46C40021A828 = {
 			isa = PBXGroup;
 			children = (
+				E5C8A59221BA47330021A828 /* Lib */,
 				E5C8A57B21BA46C40021A828 /* TKDemo */,
 				E5C8A57A21BA46C40021A828 /* Products */,
+				8960FBE158DACF5A2737AC74 /* Pods */,
+				68314BDB39EFD2768BB89332 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,13 @@
 			path = TKDemo;
 			sourceTree = "<group>";
 		};
+		E5C8A59221BA47330021A828 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5C8A58F21BA46C40021A828 /* Build configuration list for PBXNativeTarget "TKDemo" */;
 			buildPhases = (
+				AF059F33B0464ED11B3DC35E /* [CP] Check Pods Manifest.lock */,
 				E5C8A57521BA46C40021A828 /* Sources */,
 				E5C8A57621BA46C40021A828 /* Frameworks */,
 				E5C8A57721BA46C40021A828 /* Resources */,
+				A4ECBA0E29DFB93D0787AB28 /* [CP] Embed Pods Frameworks */,
+				97AAA35FE6567BCAB25AC2DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +170,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97AAA35FE6567BCAB25AC2DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TKDemo/Pods-TKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4ECBA0E29DFB93D0787AB28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TKDemo/Pods-TKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF059F33B0464ED11B3DC35E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5C8A57521BA46C40021A828 /* Sources */ = {
@@ -281,6 +367,7 @@
 		};
 		E5C8A59021BA46C40021A828 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F95DC08BC38778FE18141AE /* Pods-TKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +385,7 @@
 		};
 		E5C8A59121BA46C40021A828 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EE52E2DA29E8DADA66DF702 /* Pods-TKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

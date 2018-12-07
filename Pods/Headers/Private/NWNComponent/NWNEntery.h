@@ -1,0 +1,1 @@
+../../../../Lib/NWNComponent/NWNComponent/Classes/NWNEntery.h
